@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*{
+    margin: 0;
+   
+    
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+.navbar{
+    
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 2px solid rgb(204, 128, 160);
+    background: transparent;
+    color: black;
+    
+}
+.navbar h1{
+font-family: 'Fredericka the Great', cursive;
+
+color: brown;
+}
+
+
+.navbar .links {
+    margin-left: auto;
+    word-spacing: 5ch;
+    
+}
+.navbar a{
+    margin-left: 16px;
+    padding: 6px;
+    font-weight: bold;
+    color: rgba(236, 34, 34, 0.428);
+    letter-spacing: 4px;
+}
+
+
+.navbar a:hover{
+    color: blue;
+}
+.content{
+    max-width: 800px;
+    
+    padding: 20px;
+    margin: 40px auto;
+}
+button{
+    margin: 10px auto;
+}
+
+.blog-preview{
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 10px 10px 19px rgb(250, 245, 245);
+  
+    font-family: 'Poiret One', cursive;
+    
+    font-weight: bold;
+}
+.blog-preview:hover{
+    box-shadow: 2px 5px 8px red;
+}
+
+.blog-preview h2{
+    font-size: 25px;
+    color: rgb(7, 98, 101);
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    
+}
+.blog-list h1{
+    letter-spacing: 20px;
+    margin-bottom: 40px;
+    color: crimson;
+    box-shadow: 5px 5px 5px rgb(245, 241, 241);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.blog-preview p{
+    
+    color: rgba(52, 5, 22, 0.632);
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog-preview .author{
+    padding-bottom: 20px;
+    font-style: italic;
+    color: black;
+   font-size: smaller;
+   text-align: center;
+    
+    
+}
+.blog-preview > a:hover{
+    text-decoration: none;
+}
+.blog-details h2{
+    font-size:30px;
+    color: rgb(165, 36, 36);
+    margin-bottom: 10px;
+}
+.blog-details div{
+    margin: 30px 0;
+}
+
+p{
+    color: rgb(10, 97, 108);
+}
+.blog-details{
+    
+    background-size: cover;
+    
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 8px 12px rgb(235, 43, 43);
+    border-radius: 4px;
+}
+.blog-details > article > .ct {
+    color: rgb(56, 4, 36);
+}
+.blog-details > article{
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.create {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.create > h2{
+    font-size: 20px;
+    color:black;
+    margin-bottom: 30px;
+}
+.create > form {
+    align-items: center;
+    text-align: center;
+}
+.create  label {
+    display: block;
+    text-align: left;
+    color: rgb(10, 101, 147);
+    
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.create input, .create textarea, .create select{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 2px solid rgb(204, 211, 233);
+    box-sizing: border-box;
+    display: block;
+    border-radius: 8px;
+    
+    
+}
+.create textarea{
+    height:200px;
+}
+
+.create  button{
+    background-color: rgb(43, 7, 135);
+    color: white;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.blog-details button{
+    background: rgb(236, 55, 55);
+    color: white;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
 }
